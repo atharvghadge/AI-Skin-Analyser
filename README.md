@@ -1,70 +1,215 @@
-# Getting Started with Create React App
+# 🧴 AI Skin Analyser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered skin analysis web application that analyzes facial skin images and provides personalized skincare insights using Computer Vision and Claude AI.
 
-## Available Scripts
+Users can upload a skin image and instantly receive:
+- Skin type detection
+- Skin concern analysis
+- Hydration & texture assessment
+- Personalized skincare recommendations
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📸 Upload facial skin images directly from your device
+- 🤖 AI-powered skin analysis using Claude AI
+- 🔍 Detects:
+  - Acne
+  - Pigmentation
+  - Dryness
+  - Redness
+  - Dark spots
+  - Skin texture issues
+- 🧴 Personalized skincare recommendations
+- ⚡ Fast real-time analysis
+- 🔐 Privacy-focused — images are not stored
+- 🎨 Clean and responsive UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 🚀 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Frontend
+- React.js
+- CSS3
+- JavaScript
 
-### `npm run build`
+## AI & APIs
+- Claude AI (Anthropic API)
+- claude-sonnet-4-20250514
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tools & Libraries
+- Create React App
+- Node.js
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📁 Project Structure
 
-### `npm run eject`
+```bash
+AI-Skin-Analyser/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# ⚙️ Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 1. Clone Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/yourusername/AI-Skin-Analyser.git
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 2. Navigate to Project Folder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd AI-Skin-Analyser
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 3. Install Dependencies
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# 🔐 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create a `.env` file in the root directory:
 
-### Advanced Configuration
+```env
+REACT_APP_ANTHROPIC_API_KEY=your_anthropic_api_key_here
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> ⚠️ Never upload your `.env` file to GitHub.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# ▶️ Run the Application
 
-### `npm run build` fails to minify
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🛠️ Available Scripts
+
+| Command | Description |
+|----------|-------------|
+| `npm start` | Starts development server |
+| `npm run build` | Creates production build |
+| `npm test` | Runs test cases |
+| `npm run eject` | Ejects CRA configuration |
+
+---
+
+# 🧠 AI Analysis Capabilities
+
+The AI model analyzes:
+- Skin type
+- Acne severity
+- Pigmentation
+- Texture quality
+- Hydration levels
+- Redness and irritation
+
+The application then generates:
+- Personalized skincare routines
+- Product suggestions
+- Skin health insights
+
+---
+
+# 📦 Production Build
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+Production files will be generated inside:
+
+```bash
+build/
+```
+
+You can deploy the build on:
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+---
+
+# 📸 Screenshots
+
+Add your project screenshots here.
+
+Example:
+
+```markdown
+![Home Page](screenshots/home.png)
+```
+
+---
+
+# 🔮 Future Improvements
+
+- Real-time camera analysis
+- Multi-language support
+- Dermatologist consultation integration
+- Skin progress tracking
+- Mobile application support
+- Advanced AI skin disease detection
+
+---
+
+# ⚠️ Disclaimer
+
+This application is intended for educational and informational purposes only.
+
+It does not provide medical advice or replace professional dermatological consultation.
+
+Please consult a certified dermatologist for medical concerns.
+
+---
+
+# 👨‍💻 Author
+
+## Atharv Ghadge
+
+---
+
+# 📄 License
+
+This project is developed for educational and portfolio purposes.
